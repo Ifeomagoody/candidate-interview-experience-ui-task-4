@@ -1,11 +1,11 @@
 
 "use client"
 
-import { useEffect } from "react"
+import { Dispatch, SetStateAction, useEffect } from "react"
 
 interface TimerProps {
   timeRemaining: number
-  setTimeRemaining: (time: number) => void
+  setTimeRemaining: Dispatch<SetStateAction<number>>;
   onTimeUp: () => void
 }
 
